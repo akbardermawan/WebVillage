@@ -43,8 +43,8 @@ const Navbar = () => {
         ref={navContainerRef}
         className="hidden md:flex md:justify-between md:items-center fixed inset-x-0 top-0 z-50 h-16 border-none transition-all duration-700 sm:inset-x-6 bg-white/30 hover:bg-white/70 px-3 rounded-2xl max-w-7xl mx-auto"
       >
-        <div className="ml-5">
-          <img src="./image/logo.png" alt="logo" className="w-15" />
+        <div className="ml-5 rounded-full overflow-hidden">
+          <img src="./image/logo.jpg" alt="logo" className="w-15" />
         </div>
         <div>
           <ul className="flex space-x-6 mr-2 ">

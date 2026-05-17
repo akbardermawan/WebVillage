@@ -12,7 +12,9 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-[50%]">
           <div className="flex  items-center">
-            <img src="./image/logo.png" alt="logo" className="w-15" />
+            <div className="mr-3 rounded-full overflow-hidden">
+              <img src="./image/logo.jpg" alt="logo" className="w-15" />
+            </div>
             <h3 className="font-poppins text-4xl font-semibold text-gray-800">
               Resilient Village
             </h3>
@@ -21,32 +23,32 @@ const Footer = () => {
             <p>Official Website of Resilient Village Government</p>
             <p className="font-poppin">Let's Connect</p>
             <ul className="flex">
-              <li className="m-2 rounded-full w-13 h-13 border-solid border flex items-center justify-center cursor-pointer hover:bg-gray-700 hover:text-white">
+              <li className="m-1 md:m-2 rounded-full w-10 md:w-13 h-10 md:h-13 border-solid border flex items-center justify-center cursor-pointer hover:bg-gray-700 hover:text-white">
                 <a
                   href="https://mail.google.com/mail/u/0/#search/akbardermawan27%40gmail.com"
                   target="_blank"
                 >
-                  <MdOutlineEmail className="w-8 h-8 " />
+                  <MdOutlineEmail className="w-6 md:w-8 h-6 md:h-8 " />
                 </a>
               </li>
-              <li className="m-2 rounded-full w-13 h-13 border-solid border flex items-center justify-center cursor-pointer hover:bg-gray-700 hover:text-white">
+              <li className="m-1 md:m-2 rounded-full w-10 md:w-13 h-10 md:h-13 border-solid border flex items-center justify-center cursor-pointer hover:bg-gray-700 hover:text-white">
                 <a href="https://www.youtube.com/@ADM.code1" target="_blank">
-                  <FaYoutube className="w-8 h-8 " />
+                  <FaYoutube className="w-6 md:w-8 h-6 md:h-8 " />
                 </a>
               </li>
-              <li className="m-2 rounded-full w-13 h-13 border-solid border flex items-center justify-center cursor-pointer hover:bg-gray-700 hover:text-white">
+              <li className="m-1 md:m-2 rounded-full w-10 md:w-13 h-10 md:h-13 border-solid border flex items-center justify-center cursor-pointer hover:bg-gray-700 hover:text-white">
                 <a href="https://www.youtube.com/@ADM.code1" target="_blank">
-                  <FaFacebookF className="w-8 h-8 " />
+                  <FaFacebookF className="w-6 md:w-8 h-6 md:h-8 " />
                 </a>
               </li>
-              <li className="m-2 rounded-full w-13 h-13 border-solid border flex items-center justify-center cursor-pointer hover:bg-gray-700 hover:text-white">
+              <li className="m-1 md:m-2 rounded-full w-10 md:w-13 h-10 md:h-13 border-solid border flex items-center justify-center cursor-pointer hover:bg-gray-700 hover:text-white">
                 <a href="">
-                  <FaWhatsapp className="w-8 h-8 " />
+                  <FaWhatsapp className="w-6 md:w-8 h-6 md:h-8 " />
                 </a>
               </li>
-              <li className="m-2 rounded-full w-13 h-13 border-solid border flex items-center justify-center cursor-pointer hover:bg-gray-700 hover:text-white">
+              <li className="m-1 md:m-2 rounded-full w-10 md:w-13 h-10 md:h-13 border-solid border flex items-center justify-center cursor-pointer hover:bg-gray-700 hover:text-white">
                 <a href="">
-                  <FaTelegramPlane className="w-8 h-8 " />
+                  <FaTelegramPlane className="w-6 md:w-8 h-6 md:h-8 " />
                 </a>
               </li>
             </ul>
@@ -62,8 +64,7 @@ const Footer = () => {
             />
           </div>
           <p className="font-poppins text-justify mt-2">
-            Gumukmas District, Jember Regency Contact Us Jl. PB. Sudirman No.
-            01, Tembokrejo Village, Tembokrejo Village, Gumukmas District,
+            Jl. PB. Sudirman No. 01, Resilient Village, Gumukmas District,
             Jember Regency, East Java Province, Indonesia, 68165.
           </p>
           <div className="flex items-center">

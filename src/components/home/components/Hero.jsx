@@ -14,11 +14,11 @@ const Hero = () => {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-10">
-        <h1 className="text-white text-3xl font-bold font-poppins">
+      <div className="relative z-10 flex flex-col items-center justify-center w-full h-full p-2 md:p-10">
+        <h1 className="text-white text-xl md:text-3xl font-bold font-poppins">
           We are Resilient Village
         </h1>
-        <p className="font-poppins bg-gray-400/20 p-2 rounded-xl text-center font-bold text-white">
+        <p className="hidden md:flex font-poppins bg-gray-400/20 p-2 rounded-xl text-center font-bold text-white">
           Find out about the work of the Mayor, the Resilient Village Staff and
           the Greater Resilient Village Authority.
         </p>

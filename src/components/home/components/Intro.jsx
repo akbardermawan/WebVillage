@@ -34,7 +34,7 @@ const Intro = () => {
             transform: transformStyle,
             transition: "transform 0.2s ease",
           }}
-          className="relative w-[30%] lg:w-[25%] h-[200px] md:h-[180px] lg:h-[200px] flex items-center justify-center overflow-hidden rounded-2xl shadow-lg"
+          className="relative w-[35%] lg:w-[25%] h-[200px] md:h-[180px] lg:h-[200px] flex items-center justify-center overflow-hidden rounded-2xl shadow-lg"
         >
           {/* Background Video */}
           <img
@@ -44,7 +44,7 @@ const Intro = () => {
           />
         </div>
         <div className="mx-auto px-2 ">
-          <h1 className="font-poppins text-2xl mt-4 text-center md:text-xl lg:text-2xl">
+          <h1 className="font-poppins text-xl mt-4 text-center md:text-xl lg:text-2xl">
             Akbar Dermawan Mahbubillah
           </h1>
 
@@ -59,7 +59,7 @@ const Intro = () => {
           </p>
         </div>
       </div>
-      <div className="bg-gray-500 md:bg-gray-100 w-full p-2 md:p-5">
+      <div className="hidden md:flex md:flex-col bg-gray-500 md:bg-gray-100 w-full p-2 md:p-5">
         <h1 className="text-center text-3xl text-white md:text-black font-poppins">
           Population Statistics of Resilient Village
         </h1>
