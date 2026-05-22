@@ -8,13 +8,15 @@ const BodyHome = () => {
   return (
     <div className="w-full">
       {/* part 1 */}
-      <div className="w-full flex flex-col md:flex-row gap-5 p-5 ">
+      <div className="w-full flex flex-col md:flex-row gap-5 p-5 bg-gray-100 ">
         {/* LEFT SIDE */}
         <div className="w-full md:w-[50%] bg-gray-200 rounded-2xl overflow-hidden shadow-lg">
           {/* HEADER */}
-          <div className="bg-gray-400 flex justify-center items-center py-4">
-            <LuMapPin className="w-5 h-5" />
-            <h6 className="text-xl font-bold ml-2 font-poppins">Location</h6>
+          <div className="bg-slate-900 flex justify-center items-center py-4">
+            <LuMapPin className="w-5 h-5 text-white" />
+            <h6 className="text-xl font-bold ml-2 font-poppins text-white">
+              Location
+            </h6>
           </div>
 
           {/* MAP */}
@@ -181,7 +183,7 @@ const BodyHome = () => {
       </div>
 
       {/* part 2 */}
-      <div className="w-full px-6 py-10 bg-gray-200">
+      <div className="w-full px-6 py-10 bg-gray-100">
         <div className="max-w-6xl ">
           <h5 className="text-3xl md:text-4xl font-bold text-gray-800 mb-10 font-poppins ">
             Who We Are
@@ -234,12 +236,14 @@ const BodyHome = () => {
       </div>
 
       {/* part 3 */}
-      <div className="w-full px-6 py-10 bg-gray-50">
+      <div className="w-full px-6 py-10 bg-gray-100 ">
         <div className="max-w-6xl ">
-          <h5 className="text-3xl md:text-4xl font-bold text-gray-800  font-poppins ">
+          <h5 className="text-3xl md:text-4xl font-bold text-slate-900   font-poppins ">
             Priorities for Risilient Village
           </h5>
-          <span>Read about the things tahnt matter most right now.</span>
+          <span className="text-gray-800 ">
+            Read about the things tahnt matter most right now.
+          </span>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
             {/* Card 1 */}
@@ -305,7 +309,7 @@ const BodyHome = () => {
       </div>
 
       {/* part 4 */}
-      <div className="w-full px-6 py-10 bg-gray-200 hidden md:flex">
+      <div className="w-full px-6 py-10 bg-gray-100 hidden md:flex">
         <div className="max-w-6xl ">
           <h5 className="text-3xl md:text-4xl font-bold text-gray-800  font-poppins ">
             Upcoming events

@@ -44,11 +44,11 @@ const Intro = () => {
           />
         </div>
         <div className="mx-auto px-2 ">
-          <h1 className="font-poppins text-xl mt-4 text-center md:text-xl lg:text-2xl">
+          <h1 className="font-poppins text-xl mt-4 text-center md:text-xl lg:text-2xl text-slate-900 md:font-semibold">
             Akbar Dermawan Mahbubillah
           </h1>
 
-          <p className="text-justify font-poppins mt-3">
+          <p className="text-justify font-poppins mt-3 pb-5">
             Welcome to the official website of Resilient Village. This website
             is presented as a reflection of the village government's commitment
             to providing transparent, efficient, and easily accessible services
@@ -59,7 +59,7 @@ const Intro = () => {
           </p>
         </div>
       </div>
-      <div className="hidden md:flex md:flex-col bg-gray-500 md:bg-gray-100 w-full p-2 md:p-5">
+      <div className="hidden md:flex md:flex-col bg-gray-300 md:bg-gray-100 w-full p-2 md:p-5">
         <h1 className="text-center text-3xl text-white md:text-black font-poppins">
           Population Statistics of Resilient Village
         </h1>
