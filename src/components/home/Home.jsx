@@ -4,6 +4,7 @@ import Footer from "../footer/Footer";
 import Intro from "./components/Intro";
 import BodyHome from "./components/BodyHome";
 import Contact from "./components/Contact";
+import SliderHome from "./components/SliderHome";
 
 const Home = () => {
   return (

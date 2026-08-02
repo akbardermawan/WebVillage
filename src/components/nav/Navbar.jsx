@@ -3,8 +3,13 @@ import { NAVBAR } from "../../common/constants";
 import gsap from "gsap";
 import { useWindowScroll } from "react-use";
 import { useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
+  const [isOpenNavAndroid, setIsOpenNavAndroid] = useState(false);
   const navContainerRef = useRef(null);
   const { y: currentScrollY } = useWindowScroll();
   const [isNavVisible, setIsNavVisible] = useState(true);
@@ -35,6 +40,10 @@ const Navbar = () => {
       duration: 0.2,
     });
   }, [isNavVisible]);
+
+  const handleIsOpenNavAndroid = () => {
+    setIsOpenNavAndroid((prev) => !prev);
+  };
 
   return (
     <nav>
@@ -81,8 +90,90 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      {/* HP */}
-      <div></div>
+      {/* ==============================
+          MOBILE NAVBAR
+      ============================== */}
+
+      <div className="md:hidden">
+        {/* Hamburger Button */}
+        <div className="fixed right-5 top-5 z-50">
+          <button
+            onClick={handleIsOpenNavAndroid}
+            className="cursor-pointer rounded-lg  p-2 shadow-md"
+          >
+            {isOpenNavAndroid ? (
+              <IoMdClose className="h-10 w-10" />
+            ) : (
+              <GiHamburgerMenu className="h-10 w-10" />
+            )}
+          </button>
+        </div>
+      </div>
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isOpenNavAndroid && (
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: "-100%",
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+            }}
+            exit={{
+              opacity: 0,
+              y: "-100%",
+            }}
+            transition={{
+              duration: 0.4,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+            className="fixed inset-0 z-40 h-screen w-full bg-white"
+          >
+            <motion.div
+              className="flex h-full flex-col items-center justify-center gap-8"
+              initial="hidden"
+              animate="visible"
+              exit="hidden"
+              variants={{
+                hidden: {},
+                visible: {
+                  transition: {
+                    delayChildren: 0.2,
+                    staggerChildren: 0.1,
+                  },
+                },
+              }}
+            >
+              {NAVBAR.map((item) => (
+                <motion.a
+                  key={item.id}
+                  href={item.url}
+                  onClick={() => setIsOpenNavAndroid(false)}
+                  variants={{
+                    hidden: {
+                      opacity: 0,
+                      y: 20,
+                    },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                    },
+                  }}
+                  transition={{
+                    duration: 0.4,
+                    ease: "easeOut",
+                  }}
+                  className="text-2xl font-semibold"
+                >
+                  {item.name}
+                </motion.a>
+              ))}
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

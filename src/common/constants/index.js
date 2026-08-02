@@ -5,7 +5,7 @@ const NAVBAR = [
   {
     id: 3,
     name: "INFORMATION",
-    url: "",
+    url: "/infomation",
     children: [
       { id: 1, name: "Profile", url: "" },
       { id: 1, name: "Staff Member", url: "" },
@@ -17,7 +17,7 @@ const NAVBAR = [
   {
     id: 4,
     name: "PRODUCT",
-    url: "product",
+    url: "/product",
     children: [
       { id: 1, name: "Agriculture", url: "" },
       { id: 2, name: "Fisheries", url: "" },
@@ -28,13 +28,21 @@ const NAVBAR = [
   {
     id: 5,
     name: "SERVICE",
-    url: "",
+    url: "/service",
     children: [
       { id: 1, name: "Recruitment", url: "" },
       { id: 2, name: "Complaint", url: "" },
     ],
   },
-  { id: 6, name: "LOGIN", url: "" },
+  { id: 6, name: "LOGIN", url: "/login" },
 ];
 
-export { NAVBAR };
+const ImgSliderHome = [
+  { id: 1, name: "1", img: "/image/resilient-4.jpeg" },
+  { id: 2, name: "2", img: "/image/resilient.webp" },
+  { id: 3, name: "3", img: "/image/resilient-3.jpg" },
+  { id: 4, name: "4", img: "/image/resilient-7.jpeg" },
+  { id: 5, name: "5", img: "/image/resilient6.webp" },
+];
+
+export { NAVBAR, ImgSliderHome };

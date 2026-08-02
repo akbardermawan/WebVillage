@@ -34,7 +34,7 @@ const Intro = () => {
             transform: transformStyle,
             transition: "transform 0.2s ease",
           }}
-          className="relative w-[35%] lg:w-[25%] h-[200px] md:h-[180px] lg:h-[200px] flex items-center justify-center overflow-hidden rounded-2xl shadow-lg"
+          className="relative w-[50%] lg:w-[25%] h-[200px] md:h-[180px] lg:h-[200px] flex items-center justify-center overflow-hidden rounded-2xl shadow-lg"
         >
           {/* Background Video */}
           <img

@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { LuMapPin } from "react-icons/lu";
 import { FaAngleRight } from "react-icons/fa";
+import SliderHome from "./SliderHome";
 
 const BodyHome = () => {
   const [detailOpen, setDetailOpen] = useState(false);
 
   return (
-    <div className="w-full">
+    <div className="w-full bg-gray-100">
       {/* part 1 */}
-      <div className="w-full flex flex-col md:flex-row gap-5 p-5 bg-gray-100 ">
+      <div className="w-full flex flex-col md:flex-row gap-5 p-5 bg-gray-200 ">
         {/* LEFT SIDE */}
         <div className="w-full md:w-[50%] bg-gray-200 rounded-2xl overflow-hidden shadow-lg">
           {/* HEADER */}
@@ -181,9 +182,9 @@ const BodyHome = () => {
           </div>
         </div>
       </div>
-
+      <SliderHome />
       {/* part 2 */}
-      <div className="w-full px-6 py-10 bg-gray-100">
+      <div className="w-full px-6 py-10 bg-gray-100 mt-10">
         <div className="max-w-6xl ">
           <h5 className="text-3xl md:text-4xl font-bold text-gray-800 mb-10 font-poppins ">
             Who We Are

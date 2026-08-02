@@ -8,19 +8,21 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-gray-300 px-5 pt-8">
+    <div className="bg-gray-300 px-5 pt-10  border-t border-gray-500">
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:w-[50%]">
           <div className="flex  items-center">
             <div className="mr-3 rounded-full overflow-hidden">
               <img src="./image/logo.jpg" alt="logo" className="w-15" />
             </div>
-            <h3 className="font-poppins text-4xl font-semibold text-gray-800">
-              Resilient Village
+            <h3 className="font-poppins text-3xl md:text-4xl font-semibold text-white md:text-gray-800">
+              Resilient <span className="text-xl md:text-4xl">Village</span>
             </h3>
           </div>
           <div className="mt-5">
-            <p>Official Website of Resilient Village Government</p>
+            <p className="hidden md:block">
+              Official Website of Resilient Village Government
+            </p>
             <p className="font-poppin">Let's Connect</p>
             <ul className="flex">
               <li className="m-1 md:m-2 rounded-full w-10 md:w-13 h-10 md:h-13 border-solid border flex items-center justify-center cursor-pointer hover:bg-gray-700 hover:text-white">
@@ -79,7 +81,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border-t border-dashed border-gray-40 mt-5 p-5 flex items-center justify-center">
+      <div className="border-t border-dashed border-gray-40 mt-5 p-5 flex items-center justify-center text-sm md:text-md text-center">
         © Copyright Greater Resilient Village Authority 2026
       </div>
     </div>

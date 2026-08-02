@@ -58,7 +58,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="w-full flex justify-center items-center py-16 px-4 bg-gradient-to-b from-gray-100 via-gray-30000 to-[#2E8B57]">
+    <section className="w-full flex justify-center items-center py-16 px-4 bg-gradient-to-b from-gray-100 via-gray-30000 to-gray-300">
       <div className="w-full max-w-2xl bg-white/50 rounded-3xl shadow-2xl p-8 md:p-10 border ">
         {/* Header */}
         <div className="text-center mb-8">
