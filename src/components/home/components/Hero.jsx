@@ -18,7 +18,7 @@ const Hero = () => {
         <h1 className="text-white text-xl md:text-3xl font-bold font-poppins">
           We are Resilient Village
         </h1>
-        <p className="hidden md:flex font-poppins bg-gray-400/20 p-2 rounded-xl text-center font-bold text-white">
+        <p className="hidden md:flex font-poppins p-2 rounded-xl text-center font-bold text-white">
           Find out about the work of the Mayor, the Resilient Village Staff and
           the Greater Resilient Village Authority.
         </p>

@@ -73,4 +73,10 @@ const ImgSliderHome = [
   { id: 5, name: "5", img: "/image/resilient6.webp" },
 ];
 
-export { NAVBAR, ImgSliderHome };
+const HeroImgAbout = [
+  { id: 1, name: "1", img: "/image/townhall.jpg" },
+  { id: 2, name: "2", img: "/image/staf.jpeg" },
+  { id: 3, name: "3", img: "/image/resilient-2.jpg" },
+];
+
+export { NAVBAR, ImgSliderHome, HeroImgAbout };
